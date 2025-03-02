@@ -1,1 +1,1 @@
-# aws-githhub-integration-sample
+# AWS-GithHub-Integration-Sample

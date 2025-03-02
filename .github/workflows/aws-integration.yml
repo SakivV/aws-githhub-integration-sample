@@ -35,5 +35,9 @@ jobs:
       - name: Verify AWS Identity
         run: aws sts get-caller-identity    
 
-      - name: List S3 Buckets
-        run: aws s3 ls
+      - name: Deploy CloudFormation Stack
+        run: |
+          aws cloudformation deploy \
+            --stack-name github-actions-s3-stack \
+            --template-file s3-bucket-stack.yml \
+            --capabilities CAPABILITY_NAMED_IAM
