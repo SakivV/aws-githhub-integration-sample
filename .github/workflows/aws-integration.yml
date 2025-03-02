@@ -39,5 +39,5 @@ jobs:
         run: |
           aws cloudformation deploy \
             --stack-name github-actions-s3-stack \
-            --template-file s3-bucket-stack.yml \
+            --template-file 01-s3-bucket.yaml \
             --capabilities CAPABILITY_NAMED_IAM

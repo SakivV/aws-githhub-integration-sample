@@ -1,0 +1,8 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: "CloudFormation Stack to create an S3 Bucket"
+
+Resources:
+  MyS3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Sub github-actions-s3-${AWS::AccountId}-${AWS::Region}
