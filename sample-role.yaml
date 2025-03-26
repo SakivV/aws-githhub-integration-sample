@@ -24,3 +24,7 @@ Resources:
                   - "dynamodb:GetItem"
                   - "dynamodb:DeleteTable"
                 Resource: "*"
+              - Effect: Allow
+                Action:
+                  - "sts:AssumeRole"
+                Resource: "arn:aws:iam::*:role/my-sensitive-roles/adminrole452"

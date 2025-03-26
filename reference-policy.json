@@ -8,7 +8,7 @@
         },
         {
             "Effect": "Deny",
-            "Action": "iam:PassRole",
+            "Action": "sts:AssumeRole",
             "Resource": "arn:aws:iam::*:role/my-sensitive-roles/*"
         }
     ]
